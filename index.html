@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/grid.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<title>Responsive Image Sizing</title>
+
+</head>
+
+<body>
+
+<!-- SRCSET -->
+
+<section class="grid-con center-grid-con">
+
+<h2 class="col-span-full">Responsive Nature Image Using SRCSET</h2>
+
+<img
+class="col-start-1 col-end-5 m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11"
+src="images/Nature.jpg"
+srcset="images/Nature.jpg 480w, images/Nature.jpg 768w, images/Nature.jpg 1200w"
+sizes="100vw"
+alt="Nature Landscape">
+
+<p class="col-span-full">
+Lorem ipsum dolor sit amet consectetur 
+adipisicing elit. Rerum ad a, totam laborum 
+corrupti fugiat ducimus aliquid dolores ut nisi, vero optio repellat odit quia atque error impedit autem officiis.
+</p>
+
+</section>
+
+
+<!-- PICTURE ELEMENT -->
+
+<section class="grid-con center-grid-con">
+
+<h2 class="col-span-full">Responsive City Image Using Picture Element</h2>
+
+<picture class="col-start-1 col-end-5 m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
+
+<source srcset="images/city.jpg" media="(min-width: 768px)">
+
+<img src="images/city.jpg" alt="City View">
+
+</picture>
+
+<p class="col-span-full">
+Lorem ipsum dolor sit amet consectetur 
+adipisicing elit. Pariatur placeat officia 
+nobis velit repudiandae ut! Dolorem dicta voluptates 
+soluta veniam culpa. Earum voluptas quis fugit, magni incidunt voluptatum omnis laudantium?
+</p>
+
+</section>
+
+
+<!-- CSS BACKGROUND -->
+
+<section class="grid-con center-grid-con">
+
+<h2 class="col-span-full">Responsive Beach Image Using CSS</h2>
+
+<div class="hero-image col-start-1 col-end-5 m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11"></div>
+
+<p class="col-span-full">
+Lorem ipsum dolor sit amet consectetur 
+adipisicing elit. Illum aliquid ratione earum 
+odio vitae facilis id beatae nulla aperiam impedit, 
+autem culpa tempora a pariatur dolorem quam omnis. Numquam, ea?
+</p>
+
+</section>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
